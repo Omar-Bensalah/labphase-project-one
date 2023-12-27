@@ -19,5 +19,5 @@ RUN npm run build --prod
 
 FROM nginx:1.17.1-alpine as service
 
-COPY --from=build /app/dist/labphase-project-one /usr/share/nginx/html
+COPY --from=build /app/dist/lab-phase-project /usr/share/nginx/html
 
